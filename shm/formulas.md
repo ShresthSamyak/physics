@@ -8,123 +8,83 @@ All formulas compiled from the **UPH013 Physics – Oscillations and Waves slide
 
 ## Restoring Force (Hooke's Law)
 
-\[
-F = -kx
-\]
+$F = -kx$
 
 ---
 
 ## Newton's Second Law Applied
 
-\[
-F = ma
-\]
+$F = ma$
 
-\[
--kx = ma
-\]
+$-kx = ma$
 
-\[
-a = -\frac{k}{m}x
-\]
+$a = -\frac{k}{m}x$
 
 ---
 
 ## Differential Equation of SHM
 
-\[
-\frac{d^2x}{dt^2} = -\frac{k}{m}x
-\]
+$\frac{d^2x}{dt^2} = -\frac{k}{m}x$
 
-\[
-\frac{d^2x}{dt^2} = -\omega^2 x
-\]
+$\frac{d^2x}{dt^2} = -\omega^2 x$
 
 ---
 
 ## Angular Frequency
 
-\[
-\omega^2 = \frac{k}{m}
-\]
+$\omega^2 = \frac{k}{m}$
 
-\[
-\omega = \sqrt{\frac{k}{m}}
-\]
+$\omega = \sqrt{\frac{k}{m}}$
 
 ---
 
 ## Displacement Equation
 
-\[
-x(t) = A \cos(\omega t + \phi)
-\]
+$x(t) = A \cos(\omega t + \phi)$
 
 Where:
 
-- \(A\) = Amplitude  
-- \(\omega\) = Angular frequency  
-- \(\phi\) = Phase constant  
+- $A$ = Amplitude  
+- $\omega$ = Angular frequency  
+- $\phi$ = Phase constant  
 
 ---
 
 ## Velocity
 
-\[
-v = \frac{dx}{dt}
-\]
+$v = \frac{dx}{dt}$
 
-\[
-v = -\omega A \sin(\omega t + \phi)
-\]
+$v = -\omega A \sin(\omega t + \phi)$
 
 ### Maximum Velocity
 
-\[
-v_{max} = \omega A
-\]
+$v_{max} = \omega A$
 
-\[
-v_{max} = \sqrt{\frac{k}{m}}A
-\]
+$v_{max} = \sqrt{\frac{k}{m}}A$
 
 ---
 
 ## Acceleration
 
-\[
-a = \frac{d^2x}{dt^2}
-\]
+$a = \frac{d^2x}{dt^2}$
 
-\[
-a = -\omega^2 A \cos(\omega t + \phi)
-\]
+$a = -\omega^2 A \cos(\omega t + \phi)$
 
 ### Maximum Acceleration
 
-\[
-a_{max} = \omega^2 A
-\]
+$a_{max} = \omega^2 A$
 
-\[
-a_{max} = \frac{k}{m}A
-\]
+$a_{max} = \frac{k}{m}A$
 
 ---
 
 ## Period and Frequency
 
-\[
-T = 2\pi\sqrt{\frac{m}{k}}
-\]
+$T = 2\pi\sqrt{\frac{m}{k}}$
 
-\[
-f = \frac{1}{T}
-\]
+$f = \frac{1}{T}$
 
-\[
-f = \frac{1}{2\pi}\sqrt{\frac{k}{m}}
-\]
+$f = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$
 
 ---
 
@@ -132,49 +92,35 @@ f = \frac{1}{2\pi}\sqrt{\frac{k}{m}}
 
 ## Total Mechanical Energy
 
-\[
-E = K + U
-\]
+$E = K + U$
 
 ---
 
 ## Potential Energy
 
-\[
-U = \frac{1}{2}kx^2
-\]
+$U = \frac{1}{2}kx^2$
 
 ---
 
 ## Kinetic Energy
 
-\[
-K = \frac{1}{2}mv^2
-\]
+$K = \frac{1}{2}mv^2$
 
 ---
 
 ## Total Energy Equation
 
-\[
-E = \frac{1}{2}mv^2 + \frac{1}{2}kx^2
-\]
+$E = \frac{1}{2}mv^2 + \frac{1}{2}kx^2$
 
-\[
-E = \frac{1}{2}kA^2
-\]
+$E = \frac{1}{2}kA^2$
 
 ---
 
 ## Maximum Kinetic Energy
 
-\[
-K_{max} = \frac{1}{2}mA^2\omega^2
-\]
+$K_{max} = \frac{1}{2}mA^2\omega^2$
 
-\[
-K_{max} = \frac{1}{2}kA^2
-\]
+$K_{max} = \frac{1}{2}kA^2$
 
 ---
 
@@ -182,61 +128,45 @@ K_{max} = \frac{1}{2}kA^2
 
 ## Restoring Force
 
-\[
-F = -mg\sin\theta
-\]
+$F = -mg\sin\theta$
 
 ---
 
 ## Arc Length Relation
 
-\[
-s = L\theta
-\]
+$s = L\theta$
 
 ---
 
 ## Tangential Force Equation
 
-\[
-F_t = -mg\sin\theta
-\]
+$F_t = -mg\sin\theta$
 
-\[
-F_t = m\frac{d^2s}{dt^2}
-\]
+$F_t = m\frac{d^2s}{dt^2}$
 
 ---
 
 ## Exact Differential Equation
 
-\[
-\frac{d^2\theta}{dt^2} = -\frac{g}{L}\sin\theta
-\]
+$\frac{d^2\theta}{dt^2} = -\frac{g}{L}\sin\theta$
 
 ---
 
 ## Small Angle Approximation
 
-\[
-\frac{d^2\theta}{dt^2} = -\frac{g}{L}\theta
-\]
+$\frac{d^2\theta}{dt^2} = -\frac{g}{L}\theta$
 
 ---
 
 ## Angular Frequency
 
-\[
-\omega = \sqrt{\frac{g}{L}}
-\]
+$\omega = \sqrt{\frac{g}{L}}$
 
 ---
 
 ## Period of Pendulum
 
-\[
-T = 2\pi\sqrt{\frac{L}{g}}
-\]
+$T = 2\pi\sqrt{\frac{L}{g}}$
 
 ---
 
@@ -244,77 +174,57 @@ T = 2\pi\sqrt{\frac{L}{g}}
 
 ## Voltage Equation
 
-\[
-\frac{Q}{C} + L\frac{d^2Q}{dt^2} = 0
-\]
+$\frac{Q}{C} + L\frac{d^2Q}{dt^2} = 0$
 
 ---
 
 ## Current Relation
 
-\[
-I = \frac{dQ}{dt}
-\]
+$I = \frac{dQ}{dt}$
 
 ---
 
 ## Differential Equation
 
-\[
-\frac{d^2Q}{dt^2} = -\frac{1}{LC}Q
-\]
+$\frac{d^2Q}{dt^2} = -\frac{1}{LC}Q$
 
 ---
 
 ## Charge Oscillation
 
-\[
-Q = Q_{max}\cos(\omega t + \phi)
-\]
+$Q = Q_{max}\cos(\omega t + \phi)$
 
 ---
 
 ## Angular Frequency
 
-\[
-\omega = \frac{1}{\sqrt{LC}}
-\]
+$\omega = \frac{1}{\sqrt{LC}}$
 
 ---
 
 ## Energy in Capacitor
 
-\[
-U_C = \frac{Q^2}{2C}
-\]
+$U_C = \frac{Q^2}{2C}$
 
 ---
 
 ## Energy in Inductor
 
-\[
-U_L = \frac{1}{2}LI^2
-\]
+$U_L = \frac{1}{2}LI^2$
 
 ---
 
 ## Total Energy
 
-\[
-U = U_C + U_L
-\]
+$U = U_C + U_L$
 
-\[
-U = \frac{Q^2}{2C} + \frac{1}{2}LI^2
-\]
+$U = \frac{Q^2}{2C} + \frac{1}{2}LI^2$
 
 ---
 
 ## Maximum Energy Equivalence
 
-\[
-\frac{Q_{max}^2}{2C} = \frac{LI_{max}^2}{2}
-\]
+$\frac{Q_{max}^2}{2C} = \frac{LI_{max}^2}{2}$
 
 ---
 
@@ -324,51 +234,37 @@ U = \frac{Q^2}{2C} + \frac{1}{2}LI^2
 
 Retarding force:
 
-\[
-R = -bv
-\]
+$R = -bv$
 
 Restoring force:
 
-\[
-F = -kx
-\]
+$F = -kx$
 
 ---
 
 ## Equation of Motion
 
-\[
-m\frac{d^2x}{dt^2} + b\frac{dx}{dt} + kx = 0
-\]
+$m\frac{d^2x}{dt^2} + b\frac{dx}{dt} + kx = 0$
 
 ---
 
 ## Underdamped Solution
 
-\[
-x = Ae^{-\frac{b}{2m}t}\cos(\omega t + \phi)
-\]
+$x = Ae^{-\frac{b}{2m}t}\cos(\omega t + \phi)$
 
 Amplitude decay:
 
-\[
-A(t) = Ae^{-\frac{b}{2m}t}
-\]
+$A(t) = Ae^{-\frac{b}{2m}t}$
 
 ---
 
 ## Damped Angular Frequency
 
-\[
-\omega = \sqrt{\frac{k}{m} - \left(\frac{b}{2m}\right)^2}
-\]
+$\omega = \sqrt{\frac{k}{m} - \left(\frac{b}{2m}\right)^2}$
 
 Natural frequency:
 
-\[
-\omega_0 = \sqrt{\frac{k}{m}}
-\]
+$\omega_0 = \sqrt{\frac{k}{m}}$
 
 ---
 
@@ -376,21 +272,15 @@ Natural frequency:
 
 ### Underdamped
 
-\[
-\frac{k}{m} > \left(\frac{b}{2m}\right)^2
-\]
+$\frac{k}{m} > \left(\frac{b}{2m}\right)^2$
 
 ### Critical Damping
 
-\[
-\frac{k}{m} = \left(\frac{b}{2m}\right)^2
-\]
+$\frac{k}{m} = \left(\frac{b}{2m}\right)^2$
 
 ### Overdamped
 
-\[
-\frac{k}{m} < \left(\frac{b}{2m}\right)^2
-\]
+$\frac{k}{m} < \left(\frac{b}{2m}\right)^2$
 
 ---
 
@@ -398,38 +288,25 @@ Natural frequency:
 
 ## Circuit Equation
 
-\[
-L\frac{d^2Q}{dt^2} + R\frac{dQ}{dt} + \frac{Q}{C} = 0
-\]
+$L\frac{d^2Q}{dt^2} + R\frac{dQ}{dt} + \frac{Q}{C} = 0$
 
 ---
 
 ## Charge Solution
 
-\[
-Q = Q_{max}e^{-Rt/2L}\cos(\omega_d t)
-\]
+$Q = Q_{max}e^{-Rt/2L}\cos(\omega_d t)$
 
 ---
 
 ## Damped Frequency
 
-\[
-\omega_d =
-\sqrt{
-\frac{1}{LC}
--
-\left(\frac{R}{2L}\right)^2
-}
-\]
+$\omega_d = \sqrt{ \frac{1}{LC} - \left(\frac{R}{2L}\right)^2 }$
 
 ---
 
 ## Critical Resistance
 
-\[
-R_c = \sqrt{\frac{4L}{C}}
-\]
+$R_c = \sqrt{\frac{4L}{C}}$
 
 ---
 
@@ -437,21 +314,15 @@ R_c = \sqrt{\frac{4L}{C}}
 
 ### Underdamped
 
-\[
-R < R_c
-\]
+$R < R_c$
 
 ### Critical Damping
 
-\[
-R = R_c
-\]
+$R = R_c$
 
 ### Overdamped
 
-\[
-R > R_c
-\]
+$R > R_c$
 
 ---
 
@@ -459,37 +330,27 @@ R > R_c
 
 ## Logarithmic Decrement
 
-\[
-\delta = \ln\left(\frac{x_{n-1}}{x_n}\right)
-\]
+$\delta = \ln\left(\frac{x_{n-1}}{x_n}\right)$
 
 Alternative form:
 
-\[
-\delta = rT
-\]
+$\delta = rT$
 
 Where:
 
-\[
-r = \frac{b}{2m}
-\]
+$r = \frac{b}{2m}$
 
 ---
 
 ## Relaxation Time
 
-Time for amplitude to decay to \(1/e\).
+Time for amplitude to decay to $1/e$.
 
-\[
-\tau_a = \frac{1}{r}
-\]
+$\tau_a = \frac{1}{r}$
 
 Relation with decrement:
 
-\[
-\delta = rT = \frac{T}{\tau_a}
-\]
+$\delta = rT = \frac{T}{\tau_a}$
 
 ---
 
@@ -497,44 +358,31 @@ Relation with decrement:
 
 Definition:
 
-\[
-Q =
-2\pi
-\frac{\text{Energy Stored}}
-{\text{Energy Lost per Cycle}}
-\]
+$Q = 2\pi \frac{\text{Energy Stored}}{\text{Energy Lost per Cycle}}$
 
 ---
 
 ## Energy Form
 
-\[
-Q = 2\pi \left(\frac{E}{-dE}\right)
-\]
+$Q = 2\pi \left(\frac{E}{-dE}\right)$
 
 ---
 
 ## Energy Decay
 
-\[
-E = E_0 e^{-2rt}
-\]
+$E = E_0 e^{-2rt}$
 
 ---
 
 ## Rate of Energy Loss
 
-\[
--dE = 2rE_0 e^{-2rt}dt
-\]
+$-dE = 2rE_0 e^{-2rt}dt$
 
 ---
 
 ## Simplified Quality Factor
 
-\[
-Q = \frac{\omega}{2r}
-\]
+$Q = \frac{\omega}{2r}$
 
 ---
 
