@@ -36,15 +36,11 @@ SHM helps explain:
 
 A system performs SHM when:
 
-\[
-\text{Acceleration} \propto -(\text{displacement})
-\]
+Acceleration ∝ -(displacement)
 
 or
 
-\[
-a \propto -x
-\]
+a ∝ -x
 
 This means acceleration is **proportional to displacement and directed toward equilibrium**.
 
@@ -54,9 +50,7 @@ This means acceleration is **proportional to displacement and directed toward eq
 
 A **simple harmonic oscillator** is a system where:
 
-\[
 F = -kx
-\]
 
 The restoring force is **proportional to displacement and acts toward equilibrium**.
 
@@ -82,9 +76,7 @@ Time required to complete **one full oscillation**.
 ### Frequency (f)
 Number of oscillations per second.
 
-\[
-f = \frac{1}{T}
-\]
+f = 1 / T
 
 ---
 
@@ -106,9 +98,7 @@ A pendulum exhibits SHM **only for small angular displacements**.
 
 In an **ideal frictionless system**, total mechanical energy remains constant.
 
-\[
 E = KE + PE
-\]
 
 Energy continuously transforms between:
 
@@ -147,9 +137,7 @@ The system allows **charge and current to oscillate**.
 
 Energy stored:
 
-\[
-U_C = \frac{Q^2}{2C}
-\]
+U_C = Q^2 / 2C
 
 Analogous to **spring potential energy**.
 
@@ -159,9 +147,7 @@ Analogous to **spring potential energy**.
 
 Energy stored:
 
-\[
-U_L = \frac{1}{2}LI^2
-\]
+U_L = (1/2) * L * I^2
 
 Analogous to **kinetic energy of a moving mass**.
 
@@ -202,7 +188,7 @@ The frequency when **no damping force is present**.
 
 ## Damped Electrical Oscillator (LCR Circuit)
 
-Adding resistance \(R\) introduces damping.
+Adding resistance R introduces damping.
 
 There exists a **critical resistance**:
 
@@ -247,9 +233,7 @@ There exists a **critical resistance**:
 
 Measures **rate of amplitude decay**.
 
-\[
-\delta = \ln\left(\frac{x_n}{x_{n+1}}\right)
-\]
+delta = ln(x_n / x_{n+1})
 
 ---
 
@@ -257,9 +241,7 @@ Measures **rate of amplitude decay**.
 
 Time required for amplitude to reduce to:
 
-\[
-\frac{1}{e}
-\]
+1/e
 
 of the initial value.
 
@@ -269,14 +251,9 @@ of the initial value.
 
 Quality factor measures **how lightly damped an oscillator is**.
 
-\[
-Q =
-2\pi
-\frac{\text{Energy Stored}}
-{\text{Energy Lost per Cycle}}
-\]
+Q = 2 * pi * (Energy Stored / Energy Lost per Cycle)
 
-Higher \(Q\):
+Higher Q:
 
 - less damping
 - longer oscillations
