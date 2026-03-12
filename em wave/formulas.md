@@ -4,15 +4,15 @@ Formulas for **UPH013 Physics – Electromagnetic Waves**
 
 ---
 
-# 1. Maxwell’s Equations (Integral Form)
+## 1. Maxwell’s Equations (Integral Form)
 
-## Gauss's Law for Electric Field
+### Gauss's Law for Electric Field
 
 $$
 \iint \vec{E} \cdot d\vec{S} = \frac{q}{\epsilon_0}
 $$
 
-## Gauss's Law for Magnetic Field
+### Gauss's Law for Magnetic Field
 
 $$
 \iint \vec{B} \cdot d\vec{S} = 0
@@ -20,13 +20,13 @@ $$
 
 This implies **magnetic monopoles do not exist**.
 
-## Ampère–Maxwell Law
+### Ampère–Maxwell Law
 
 $$
 \oint \vec{B} \cdot d\vec{l} = \mu_0 \left( i + \epsilon_0 \frac{d\Phi_E}{dt} \right)
 $$
 
-## Faraday's Law of Electromagnetic Induction
+### Faraday's Law of Electromagnetic Induction
 
 $$
 \oint \vec{E} \cdot d\vec{l} = -\frac{d\Phi_B}{dt}
@@ -34,30 +34,30 @@ $$
 
 ---
 
-# 2. Maxwell’s Equations (Differential Form)
+## 2. Maxwell’s Equations (Differential Form)
 
-## Gauss’s Law (Electric)
+### Gauss’s Law (Electric)
 
 $$
 
 abla \cdot \vec{E} = \frac{\rho}{\epsilon_0}
 $$
 
-## Gauss’s Law (Magnetic)
+### Gauss’s Law (Magnetic)
 
 $$
 
 abla \cdot \vec{B} = 0
 $$
 
-## Faraday’s Law
+### Faraday’s Law
 
 $$
 
 abla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}
 $$
 
-## Ampère–Maxwell Law
+### Ampère–Maxwell Law
 
 $$
 
@@ -66,11 +66,11 @@ $$
 
 ---
 
-# 3. Electromagnetic Waves in Vacuum
+## 3. Electromagnetic Waves in Vacuum
 
 In vacuum: $\rho = 0$, $\vec{J} = 0$.
 
-## Simplified Maxwell Equations
+### Simplified Maxwell Equations
 
 $$
 
@@ -94,7 +94,7 @@ $$
 
 ---
 
-# 4. Wave Equations
+## 4. Wave Equations
 
 Electric field wave equation:
 
@@ -110,15 +110,16 @@ $$
 abla^2 \vec{B} = \mu_0 \epsilon_0 \frac{\partial^2 \vec{B}}{\partial t^2}
 $$
 
-## Standard Wave Equation
+### Standard Wave Equation
 
 $$
-\nabla^2 y = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
+
+abla^2 y = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 $$
 
 ---
 
-# 5. Plane Wave Solutions
+## 5. Plane Wave Solutions
 
 Electric field:
 
@@ -134,7 +135,7 @@ $$
 
 ---
 
-# 6. Wave Vector
+## 6. Wave Vector
 
 Magnitude of propagation vector:
 
@@ -144,7 +145,7 @@ $$
 
 ---
 
-# 7. Speed of Electromagnetic Waves
+## 7. Speed of Electromagnetic Waves
 
 $$
 v = \frac{1}{\sqrt{\mu_0 \epsilon_0}}
@@ -160,7 +161,7 @@ This equals the **speed of light**.
 
 ---
 
-# 8. Transverse Nature of EM Waves
+## 8. Transverse Nature of EM Waves
 
 From divergence equations:
 
@@ -174,7 +175,7 @@ $$
 \nabla \cdot \vec{B} = i\vec{k}\cdot\vec{B} = 0 \implies \vec{k} \perp \vec{B}
 $$
 
-## Cross Product Relations
+### Cross Product Relations
 
 $$
 \vec{k} \times \vec{E} = \omega \vec{B} \implies \vec{B} \perp \vec{E}, \vec{k}
@@ -186,12 +187,12 @@ $$
 
 ---
 
-# 9. Intrinsic Impedance of Free Space
+## 9. Intrinsic Impedance of Free Space
 
 Assume:
-- $E$ along x
-- $B$ along y
-- propagation along z
+- $E$ along $x$
+- $B$ along $y$
+- propagation along $z$
 
 From Maxwell equations:
 
@@ -213,7 +214,7 @@ $$
 
 ---
 
-# 10. EM Waves in Conducting Medium
+## 10. EM Waves in Conducting Medium
 
 Material properties:
 
@@ -227,7 +228,7 @@ $$
 \vec{J} = \sigma \vec{E}
 $$
 
-## Modified Ampère–Maxwell Law
+### Modified Ampère–Maxwell Law
 
 $$
 \nabla \times \vec{B} = \mu \left( \vec{J} + \epsilon \frac{\partial \vec{E}}{\partial t} \right)
@@ -235,7 +236,7 @@ $$
 
 ---
 
-# 11. Wave Equations in Conductors
+## 11. Wave Equations in Conductors
 
 Electric field:
 
@@ -251,9 +252,10 @@ $$
 
 ---
 
-# 12. Complex Wave Vector
+## 12. Complex Wave Vector
 
 Assume $k = a + ib$.
+
 Wave relation:
 
 $$
@@ -272,7 +274,7 @@ $$
 
 ---
 
-# 13. Phase Constant
+## 13. Phase Constant
 
 $$
 a = \omega \sqrt{ \frac{\epsilon\mu}{2} \left[ \sqrt{1 + \left(\frac{\sigma}{\epsilon\omega}\right)^2} + 1 \right] }
@@ -280,7 +282,7 @@ $$
 
 ---
 
-# 14. Attenuation Constant
+## 14. Attenuation Constant
 
 $$
 b = \omega \sqrt{ \frac{\epsilon\mu}{2} \left[ \sqrt{1 + \left(\frac{\sigma}{\epsilon\omega}\right)^2} - 1 \right] }
@@ -288,22 +290,23 @@ $$
 
 ---
 
-# 15. Good Conductors
+## 15. Good Conductors
 
 Condition: $\sigma \gg \omega\epsilon$.
+
 Then:
 
 $$
 a = b = \sqrt{\frac{\mu\sigma\omega}{2}}
 $$
 
-## Phase Shift
+### Phase Shift
 
 $$
 \phi = \tan^{-1}\left(\frac{b}{a}\right) = \frac{\pi}{4}
 $$
 
-## Skin Depth
+### Skin Depth
 
 $$
 \delta = \frac{1}{b} = \sqrt{\frac{2}{\mu\sigma\omega}}
@@ -311,9 +314,10 @@ $$
 
 ---
 
-# 16. Poor Conductors
+## 16. Poor Conductors
 
 Condition: $\sigma \ll \omega\epsilon$.
+
 Then:
 
 $$
@@ -324,13 +328,13 @@ $$
 b = \frac{\sigma}{2} \sqrt{\frac{\mu}{\epsilon}}
 $$
 
-## Phase Shift
+### Phase Shift
 
 $$
 \phi = \tan^{-1} \left( \frac{\sigma}{2\epsilon\omega} \right)
 $$
 
-## Skin Depth
+### Skin Depth
 
 $$
 \delta = \frac{1}{b} = \frac{2}{\sigma} \sqrt{\frac{\epsilon}{\mu}}
@@ -338,7 +342,7 @@ $$
 
 ---
 
-# 17. Attenuation of EM Waves
+## 17. Attenuation of EM Waves
 
 Inside a conductor amplitudes decay exponentially.
 
@@ -356,7 +360,7 @@ $$
 
 ---
 
-# 18. Skin Depth
+## 18. Skin Depth
 
 Skin depth is the distance where amplitude reduces by factor $1/e$.
 
@@ -372,7 +376,7 @@ $$
 
 ---
 
-# 19. Phase Difference Between E and B
+## 19. Phase Difference Between E and B
 
 In conducting medium $\vec{E} \not\parallel \vec{B}$.
 
