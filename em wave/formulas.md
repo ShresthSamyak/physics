@@ -34,25 +34,25 @@ $$
 ## Gauss’s Law (Electric)
 $$
 
-abla \cdot \vec{E} = \frac{\rho}{\epsilon_0}
+\nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0}
 $$
 
 ## Gauss’s Law (Magnetic)
 $$
 
-abla \cdot \vec{B} = 0
+\nabla \cdot \vec{B} = 0
 $$
 
 ## Faraday’s Law
 $$
 
-abla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}
+\nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}
 $$
 
 ## Ampère–Maxwell Law
 $$
 
-abla \times \vec{B} = \mu_0 \left( \vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t} \right)
+\nabla \times \vec{B} = \mu_0 \left( \vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t} \right)
 $$
 
 ---
