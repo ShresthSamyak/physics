@@ -1,435 +1,146 @@
 # Acoustics — Complete Derivations
 
-Step-by-step derivations for **UPH013 Physics – Acoustics**
+Step-by-step derivations for **UPH013 Physics – Acoustics**.
 
 ---
 
-# 1. Sabine Formula for Reverberation Time
+## 1. Sabine Formula for Reverberation Time
 
-Reverberation time \(T\) depends on:
+Reverberation time ($T$) depends on:
+- Volume of the hall ($V$)
+- Effective absorbing surface ($A_{eff}$)
 
-- volume of the hall
-- effective absorbing surface
+The relationship is given by:
+$$ T \propto \frac{V}{A_{eff}} $$
 
-Thus
+Introducing a proportionality constant $K$:
+$$ T = \frac{KV}{A_{eff}} $$
 
-\[
-T \propto \frac{\text{Volume of hall}}{\text{Effective absorbing surface}}
-\]
+### Effective Absorbing Surface
 
-or
+$$ A_{eff} = \sum \alpha S $$
 
-\[
-T \propto \frac{V}{A_{eff}}
-\]
+Where:
+- $\alpha$ = absorption coefficient
+- $S$ = geometrical surface area
 
-Introducing proportionality constant \(K\):
+For a room with multiple surfaces ($n$):
+$$ A_{eff} = \alpha_1S_1 + \alpha_2S_2 + ... + \alpha_nS_n = \sum_{i=1}^{n} \alpha_i S_i $$
 
-\[
-T = K\frac{V}{A_{eff}}
-\]
+Thus, the Sabine formula becomes:
+$$ T = \frac{K V}{\sum \alpha_i S_i} $$
 
----
+### Constants
 
-## Effective Absorbing Surface
+For different unit systems:
+- **Feet units:** $K = 0.05$
+- **Meters (SI):** $K = 0.162$
 
-\[
-A_{eff} = \alpha S
-\]
-
-Where
-
-- \( \alpha \) = absorption coefficient
-- \( S \) = geometrical surface area
+**Final Equation:**
+$$ T = \frac{0.162V}{\sum \alpha_i S_i} \quad \text{(SI Units)} $$
 
 ---
 
-## Multiple Surfaces
+## 2. Eyring Formula
 
-If the room has \(n\) surfaces:
+This formula is used for **highly absorbent rooms**.
 
-\[
-A_{eff} = \alpha_1S_1 + \alpha_2S_2 + \alpha_3S_3 + ... + \alpha_nS_n
-\]
+### Derivation
 
-or
+1. **Distance Between Reflections:**
+   The average distance traveled between reflections is:
+   $$ d = \frac{4V}{S} $$
+   Where $V$ is volume and $S$ is total surface area.
 
-\[
-A_{eff} = \sum_{i=1}^{n} \alpha_i S_i
-\]
+2. **Time Between Reflections:**
+   If $v$ is the velocity of sound:
+   $$ t_{ref} = \frac{d}{v} = \frac{4V}{Sv} $$
 
-Thus Sabine formula becomes
+3. **Number of Reflections:**
+   The number of reflections ($n$) in total time $t$:
+   $$ n = \frac{t}{t_{ref}} = \frac{Svt}{4V} $$
 
-\[
-T = \frac{K V}{\sum \alpha_i S_i}
-\]
+4. **Intensity Decay:**
+   Let the average absorption coefficient be $\bar{\alpha}$. The fraction of energy reflected per impact is $(1-\bar{\alpha})$.
+   After $n$ reflections, the intensity $I_t$ is:
+   $$ I_t = I_0 (1-\bar{\alpha})^n $$
+   Substituting $n$:
+   $$ \frac{I_t}{I_0} = (1-\bar{\alpha})^{\frac{Svt}{4V}} $$
 
----
+5. **Reverberation Time Definition:**
+   Reverberation time $T$ is the time when intensity drops to $10^{-6}$ of the original value.
+   $$ 10^{-6} = (1-\bar{\alpha})^{\frac{SvT}{4V}} $$
 
-## Constants
+   Taking the natural log ($\ln$):
+   $$ \ln(10^{-6}) = \frac{SvT}{4V} \ln(1-\bar{\alpha}) $$
 
-For different unit systems
+   Solving for $T$:
+   $$ T = \frac{4V \ln(10^{-6})}{Sv \ln(1-\bar{\alpha})} $$
 
-Feet units:
+### Final Eyring Formula
 
-\[
-K = 0.05
-\]
+Substituting constants for velocity $v$:
 
-Meters (SI):
+- **Feet units:**
+  $$ T = \frac{-0.05V}{S\ln(1-\bar{\alpha})} $$
 
-\[
-K = 0.162
-\]
+- **SI units:**
+  $$ T = \frac{-0.162V}{S\ln(1-\bar{\alpha})} $$
 
-Thus
-
-\[
-T = \frac{0.05V}{\sum \alpha_i S_i}
-\]
-
-or
-
-\[
-T = \frac{0.162V}{\sum \alpha_i S_i}
-\]
-
----
-
-# 2. Eyring Formula
-
-Used for **highly absorbent rooms**.
+**Reduction to Sabine Formula:**
+For small $\alpha$, $\ln(1-\bar{\alpha}) \approx -\bar{\alpha}$.
+$$ T \approx \frac{0.162V}{S\bar{\alpha}} $$
+This recovers Sabine’s formula.
 
 ---
 
-## Distance Between Reflections
-
-Average distance travelled between reflections
-
-\[
-d = \frac{4V}{S}
-\]
-
-Where
-
-- \(V\) = volume of hall
-- \(S\) = total surface area
-
----
-
-## Time Between Reflections
-
-If \(v\) is velocity of sound
-
-\[
-t = \frac{4V}{Sv}
-\]
-
----
-
-## Number of Reflections
-
-Number of reflections in time \(t\):
-
-\[
-n = \frac{Svt}{4V}
-\]
-
----
-
-## Intensity After Reflections
-
-Let average absorption coefficient be
-
-\[
-\bar{\alpha}
-\]
-
-Fraction reflected:
-
-\[
-1-\bar{\alpha}
-\]
-
-After \(n\) reflections:
-
-\[
-I_t = I_0 (1-\bar{\alpha})^n
-\]
-
-Substitute \(n\):
-
-\[
-I_t = I_0 (1-\bar{\alpha})^{\frac{Svt}{4V}}
-\]
-
-Thus
-
-\[
-\frac{I_t}{I_0} =
-(1-\bar{\alpha})^{\frac{Svt}{4V}}
-\]
-
----
-
-## Definition of Reverberation Time
-
-When \(t = T\)
-
-\[
-\frac{I_t}{I_0} = 10^{-6}
-\]
-
-Thus
-
-\[
-10^{-6} =
-(1-\bar{\alpha})^{\frac{SvT}{4V}}
-\]
-
----
-
-## Taking Natural Log
-
-\[
-\ln(10^{-6})
-=
-\ln(1-\bar{\alpha})\frac{SvT}{4V}
-\]
-
----
-
-## Solving for Reverberation Time
-
-\[
-T =
-\frac{\ln(10^{-6})4V}{Sv\ln(1-\bar{\alpha})}
-\]
-
----
-
-## Final Eyring Formula
-
-Feet units:
-
-\[
-T =
-\frac{-0.05V}{S\ln(1-\bar{\alpha})}
-\]
-
-SI units:
-
-\[
-T =
-\frac{-0.162V}{S\ln(1-\bar{\alpha})}
-\]
-
----
-
-## Reduction to Sabine Formula
-
-For small \(\alpha\)
-
-\[
-\ln(1-\bar{\alpha}) \approx -\bar{\alpha}
-\]
-
-Thus
-
-\[
-T = \frac{0.05V}{S\bar{\alpha}}
-\]
-
-which is Sabine’s formula.
-
----
-
-# 3. Reverberation Chamber Methods
+## 3. Reverberation Chamber Methods
 
 Used to determine **absorption coefficient** experimentally.
 
----
+### A. Open Window Method
 
-# A. Open Window Method
+The sound absorption by the object is compared to that of an open window (perfect absorber).
+$$ \alpha = \frac{\text{Area of window}}{\text{Total area of object}} $$
 
-Sound absorption by the object equals that of an open window.
+### B. Change in Reverberation Time Method
 
-\[
-\alpha =
-\frac{\text{Area of window}}
-{\text{Total area of object}}
-\]
+We measure reverberation time without and with the object.
 
----
+1. **Without Object ($T_1$):**
+   $$ T_1 = \frac{0.05V}{\sum \alpha_i S_i} $$
 
-# B. Change in Reverberation Time Method
+2. **With Object ($T_2$):**
+   $$ T_2 = \frac{0.05V}{\sum \alpha_i S_i + cS} $$
+   Where $c$ is the object's absorption coefficient and $S$ is its area.
 
-### Without Object
+**Calculation:**
+Taking reciprocals and subtracting:
+$$ \frac{1}{T_2} - \frac{1}{T_1} = \frac{cS}{0.05V} $$
 
-\[
-T_1 =
-\frac{0.05V}{\sum \alpha_i S_i}
-\]
+Solving for $c$:
+$$ c = \frac{0.05V}{S} \left( \frac{1}{T_2} - \frac{1}{T_1} \right) $$
 
----
+### C. Decay of Intensity Method
 
-### With Object
+Starting from the intensity relation:
+$$ I_t = I_0 e^{-\frac{Svt\bar{\alpha}}{4V}} $$
+(Using the approximation $\ln(1-\bar{\alpha}) \approx -\bar{\alpha}$)
 
-\[
-T_2 =
-\frac{0.05V}{\sum \alpha_i S_i + cS}
-\]
+**Two Source Method:**
+Consider two conditions with sources generating intensities $I_0$ and $I_1$ that decay to a measured intensity $I_m$ over times $T_0$ and $T_1$.
 
-Where
+$$ I_m = I_0 e^{-\frac{SvT_0\bar{\alpha}}{4V}} $$
+$$ I_m = I_1 e^{-\frac{SvT_1\bar{\alpha}}{4V}} $$
 
-- \(c\) = absorption coefficient of object
-- \(S\) = surface area of object
+Equating and rearranging:
+$$ \frac{I_0}{I_1} = e^{\frac{\bar{\alpha}Sv(T_0-T_1)}{4V}} $$
 
----
+Taking natural log and solving for $\bar{\alpha}$:
+$$ \ln\left(\frac{I_0}{I_1}\right) = \frac{\bar{\alpha}Sv(T_0-T_1)}{4V} $$
 
-## Taking Reciprocals
+$$ \bar{\alpha} = \frac{4V \ln(I_0/I_1)}{Sv(T_0-T_1)} $$
 
-\[
-\frac{1}{T_2} - \frac{1}{T_1}
-=
-\frac{cS}{0.05V}
-\]
+Since $\frac{I_0}{I_1} = \frac{P_0}{P_1}$ (Power Ratio):
 
----
-
-## Final Formula
-
-\[
-c =
-\frac{0.05V}{S}
-\left(
-\frac{1}{T_2} - \frac{1}{T_1}
-\right)
-\]
-
----
-
-# C. Decay of Intensity Method
-
-Start from intensity relation
-
-\[
-I_t =
-I_0(1-\bar{\alpha})^{\frac{Svt}{4V}}
-\]
-
----
-
-## Taking Logarithm
-
-\[
-\ln\left(\frac{I_t}{I_0}\right)
-=
-\frac{Svt}{4V}\ln(1-\bar{\alpha})
-\]
-
-For small \(\alpha\)
-
-\[
-\ln(1-\bar{\alpha}) \approx -\bar{\alpha}
-\]
-
-Thus
-
-\[
-\ln\left(\frac{I_t}{I_0}\right)
-=
-\frac{-Svt\bar{\alpha}}{4V}
-\]
-
----
-
-## Exponential Form
-
-\[
-I_t =
-I_0 e^{-\frac{Svt\bar{\alpha}}{4V}}
-\]
-
----
-
-## Two Source Method
-
-Source 1:
-
-\[
-I_m =
-I_0 e^{-\frac{SvT_0\bar{\alpha}}{4V}}
-\]
-
-Source 2:
-
-\[
-I_m =
-I_1 e^{-\frac{SvT_1\bar{\alpha}}{4V}}
-\]
-
----
-
-## Equating Both
-
-\[
-I_0 e^{-\frac{SvT_0\bar{\alpha}}{4V}}
-=
-I_1 e^{-\frac{SvT_1\bar{\alpha}}{4V}}
-\]
-
----
-
-## Rearranging
-
-\[
-\frac{I_0}{I_1}
-=
-e^{\frac{\bar{\alpha}Sv(T_0-T_1)}{4V}}
-\]
-
----
-
-## Taking Log
-
-\[
-\ln\left(\frac{I_0}{I_1}\right)
-=
-\frac{\bar{\alpha}Sv(T_0-T_1)}{4V}
-\]
-
----
-
-## Solving for Average Absorption Coefficient
-
-\[
-\bar{\alpha}
-=
-\frac{4V}{Sv}
-\frac{\ln(I_0/I_1)}{(T_0-T_1)}
-\]
-
----
-
-## Using Power Ratio
-
-Since
-
-\[
-\frac{I_0}{I_1} = \frac{P_0}{P_1}
-\]
-
-Final expression becomes
-
-\[
-\boxed{
-\bar{\alpha}
-=
-\frac{4V\ln(P_0/P_1)}{Sv(T_0-T_1)}
-}
-\]
-
----
-
-# End of Acoustics Derivations
+$$ \boxed{ \bar{\alpha} = \frac{4V\ln(P_0/P_1)}{Sv(T_0-T_1)} } $$
