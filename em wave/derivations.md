@@ -2,6 +2,11 @@
 
 Step-by-step derivations for **UPH013 Physics – Acoustics**.
 
+## Table of Contents
+1. [Sabine Formula for Reverberation Time](#1-sabine-formula-for-reverberation-time)
+2. [Eyring Formula](#2-eyring-formula)
+3. [Reverberation Chamber Methods](#3-reverberation-chamber-methods)
+
 ---
 
 ## 1. Sabine Formula for Reverberation Time
