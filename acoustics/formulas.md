@@ -1,320 +1,77 @@
 # Acoustics — Complete Formula Sheet
+*Summarized from Acoustics chapter (UPH013 Physics)*
 
-All formulas summarized from the **Acoustics chapter (UPH013 Physics)**.
+## 1. Basic Acoustics and Reverberation
 
----
+### Reverberation Time ($T$)
+Defined as the time required for the sound intensity to fall to **one millionth** of its initial value after the source is stopped.
 
-# 1. Basic Acoustics and Reverberation Time
+$$ I = \frac{I_0}{10^6} $$
 
-## Reverberation Time Definition
+*   **$I_0$**: Initial sound intensity
+*   **$I$**: Final sound intensity
 
-Reverberation time is the **time required for the sound intensity to fall to one millionth of its initial value** after the source is stopped.
+### Absorption Coefficient ($\alpha$)
+Measures how much sound energy a surface absorbs.
 
-$$
-I = \frac{I_0}{10^6}
-$$
+$$ \alpha = \frac{\text{Sound energy absorbed}}{\text{Total energy incident}} $$
 
-Where:
-
-- \(I_0\) = Initial sound intensity  
-- \(I\) = Final sound intensity after reverberation  
-
----
-
-## Absorption Coefficient
-
-The absorption coefficient measures how much sound energy is absorbed by a surface.
-
-$$
-\alpha =
-\frac{\text{Sound energy absorbed by surface}}
-{\text{Total sound energy incident on surface}}
-$$
-
-Range:
-
-$$
-0 \leq \alpha \leq 1
-$$
-
-- \( \alpha = 0 \) → perfectly reflecting surface  
-- \( \alpha = 1 \) → perfectly absorbing surface  
+**Range:** $0 \leq \alpha \leq 1$
+*   $\alpha = 0$: Perfectly reflecting (e.g., marble)
+*   $\alpha = 1$: Perfectly absorbing (e.g., open window)
 
 ---
 
-# 2. Sabine's Formula
+## 2. Sabine's Formula
+Used for rooms with **low absorption** ($\alpha < 0.2$).
 
-Sabine derived a relation between reverberation time and hall properties.
+### General Formula
+$$ T = K \frac{V}{A} $$
 
-## General Sabine Formula
+### Effective Absorbing Area ($A$)
+$$ A = \sum \alpha_n S_n = \alpha_1 S_1 + \alpha_2 S_2 + \dots $$
 
-$$
-T = K \frac{V}{A}
-$$
+### Unit Variations
 
-Where:
-
-- \(T\) = Reverberation time  
-- \(V\) = Volume of hall  
-- \(A\) = Effective absorbing surface area  
-- \(K\) = Constant depending on unit system  
-
----
-
-## Effective Absorbing Surface Area
-
-$$
-A = \alpha_1 S_1 + \alpha_2 S_2 + \alpha_3 S_3 + \dots + \alpha_n S_n
-$$
-
-or
-
-$$
-A = \sum_{n=1}^{N} \alpha_n S_n
-$$
-
-Where:
-
-- \(S_n\) = surface area of nth material  
-- \( \alpha_n \) = absorption coefficient of that material  
+| System | Velocity of Sound ($v$) | Constant ($K$) | Formula |
+| :--- | :--- | :--- | :--- |
+| **FPS (Feet)** | $1120 \text{ ft/s}$ | **0.05** | $T = \frac{0.05V}{\sum \alpha S}$ |
+| **MKS (SI Meters)** | $340 \text{ m/s}$ | **0.161** | $T = \frac{0.161V}{\sum \alpha S}$ |
 
 ---
 
-## Sabine Formula (Feet Units)
+## 3. Eyring's Formula
+Used for **highly absorbent** rooms (Dead rooms) where $\alpha > 0.2$.
 
-Velocity of sound:
+### Formula
+$$ T = \frac{K V}{-S \ln(1-\alpha_{avg})} $$
 
-$$
-v = 1120 \; ft/s
-$$
+**Where:**
+*   $S$: Total surface area of the room
+*   $K$: $0.05$ (for Feet) or $0.161$ (for Meters)
 
-Constant:
-
-$$
-K = 0.05
-$$
-
-Thus
-
-$$
-T = \frac{0.05V}{A}
-$$
-
-or
-
-$$
-T = \frac{0.05V}{\sum_{n=1}^{N} \alpha_n S_n}
-$$
+> **Note:** When $\alpha = 1$ (perfect absorption), Sabine's formula incorrectly gives a finite time, whereas Eyring's correctly gives $T=0$.
 
 ---
 
-## Sabine Formula (SI Units)
+## 4. Measuring Absorption Coefficient
 
-Velocity of sound:
+### Method 1: Change of Absorption
+Calculate $\alpha$ by measuring Reverberation Time ($T$) with and without a test material.
 
-$$
-v = 340 \; m/s
-$$
+**Final Formula:**
+$$ \alpha_m = \frac{K V}{S_m} \left( \frac{1}{T_1} - \frac{1}{T_2} \right) $$
 
-Constant:
+*   **$T_1$**: Time *without* material
+*   **$T_2$**: Time *with* material
+*   **$S_m$**: Surface area of test material
+*   **$K$**: $0.05$ or $0.161$
 
-$$
-K = 0.161
-$$
+### Method 2: Decay of Intensity
+Used when comparing two sound sources with different maximum intensities ($I_m$ and $I'_m$).
 
-Thus
+**Final Formula:**
+$$ \alpha = \frac{K V (\ln I_m - \ln I'_m)}{S(T_1 - T_2)} $$
 
-$$
-T = \frac{0.161V}{A}
-$$
-
----
-
-# 3. Eyring's Formula
-
-Eyring’s formula is used for **highly absorbent rooms** where
-
-$$
-\alpha > 0.2
-$$
-
----
-
-## Energy Fractions
-
-Fraction absorbed:
-
-$$
-\alpha
-$$
-
-Fraction reflected:
-
-$$
-1 - \alpha
-$$
-
----
-
-## Eyring Formula (Feet)
-
-$$
-T = \frac{0.05V}{-S \ln(1-\alpha)}
-$$
-
----
-
-## Eyring Formula (Meters)
-
-$$
-T = \frac{0.161V}{-S \ln(1-\alpha)}
-$$
-
-Where:
-
-- \(S\) = total surface area of the room
-
----
-
-## Important Note
-
-For large values of \( \alpha \):
-
-Sabine formula incorrectly gives:
-
-$$
-T = \frac{0.05V}{S}
-$$
-
-But Eyring formula correctly gives:
-
-$$
-T = 0
-$$
-
-when
-
-$$
-\alpha = 1
-$$
-
----
-
-# 4. Methods to Measure Absorption Coefficient
-
-Two experimental methods are commonly used.
-
----
-
-# Method 1 — Change of Absorption
-
-Reverberation time is measured:
-
-- Without absorbing material → \(T_1\)
-- With absorbing material → \(T_2\)
-
----
-
-## Without Absorbing Material
-
-$$
-T_1 = \frac{0.05V}{\alpha S}
-$$
-
----
-
-## With Absorbing Material
-
-$$
-T_2 =
-\frac{0.05V}
-{\alpha S + \alpha_m S_m}
-$$
-
-Where:
-
-- \( \alpha_m \) = absorption coefficient of unknown material  
-- \( S_m \) = surface area of that material  
-
----
-
-## Final Formula
-
-$$
-\alpha_m =
-\frac{0.05V}{S_m}
-\left(
-\frac{T_1 - T_2}{T_1T_2}
-\right)
-$$
-
----
-
-# Method 2 — Decay of Intensity Method
-
-Used when two sound sources produce different maximum intensities.
-
----
-
-## Intensity Decay Law
-
-$$
-I = I_m e^{-Ct}
-$$
-
-Where:
-
-- \(I_m\) = maximum intensity  
-- \(C\) = decay constant  
-
----
-
-## Constant C
-
-$$
-C = \frac{\alpha S v}{4V}
-$$
-
-Where:
-
-- \(v\) = velocity of sound  
-
----
-
-## Threshold Intensity Equations
-
-For first source:
-
-$$
-I_{Th} = I_m e^{-CT_1}
-$$
-
-For second source:
-
-$$
-I_{Th} = I'_m e^{-CT_2}
-$$
-
----
-
-## Intensity Ratio
-
-$$
-\frac{I_m}{I'_m}
-=
-e^{C(T_1 - T_2)}
-$$
-
----
-
-## Final Absorption Coefficient Formula
-
-$$
-\alpha =
-\frac{0.05V(\ln I_m - \ln I'_m)}
-{S(T_1 - T_2)}
-$$
-
----
-
-# End of Acoustics Formula Sheet
+*   **$I_m, I'_m$**: Maximum intensities of the two sources
+*   **$T_1, T_2$**: Decay times for the two sources
