@@ -53,15 +53,13 @@ $$
 ### Faraday’s Law
 
 $$
-
-abla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}
+\nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}
 $$
 
 ### Ampère–Maxwell Law
 
 $$
-
-abla \times \vec{B} = \mu_0 \left( \vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t} \right)
+\nabla \times \vec{B} = \mu_0 \left( \vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t} \right)
 $$
 
 ---
@@ -73,23 +71,19 @@ In vacuum: $\rho = 0$, $\vec{J} = 0$.
 ### Simplified Maxwell Equations
 
 $$
-
-abla \cdot \vec{E} = 0
+\nabla \cdot \vec{E} = 0
 $$
 
 $$
-
-abla \cdot \vec{B} = 0
+\nabla \cdot \vec{B} = 0
 $$
 
 $$
-
-abla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}
+\nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}
 $$
 
 $$
-
-abla \times \vec{B} = \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t}
+\nabla \times \vec{B} = \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t}
 $$
 
 ---
@@ -99,22 +93,19 @@ $$
 Electric field wave equation:
 
 $$
-
-abla^2 \vec{E} = \mu_0 \epsilon_0 \frac{\partial^2 \vec{E}}{\partial t^2}
+\nabla^2 \vec{E} = \mu_0 \epsilon_0 \frac{\partial^2 \vec{E}}{\partial t^2}
 $$
 
 Magnetic field wave equation:
 
 $$
-
-abla^2 \vec{B} = \mu_0 \epsilon_0 \frac{\partial^2 \vec{B}}{\partial t^2}
+\nabla^2 \vec{B} = \mu_0 \epsilon_0 \frac{\partial^2 \vec{B}}{\partial t^2}
 $$
 
 ### Standard Wave Equation
 
 $$
-
-abla^2 y = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
+\nabla^2 y = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
 $$
 
 ---
@@ -166,13 +157,15 @@ This equals the **speed of light**.
 From divergence equations:
 
 $$
-\nabla \cdot \vec{E} = i\vec{k}\cdot\vec{E} = 0 \implies \vec{k} \perp \vec{E}
+
+abla \cdot \vec{E} = i\vec{k}\cdot\vec{E} = 0 \implies \vec{k} \perp \vec{E}
 $$
 
 Similarly:
 
 $$
-\nabla \cdot \vec{B} = i\vec{k}\cdot\vec{B} = 0 \implies \vec{k} \perp \vec{B}
+
+abla \cdot \vec{B} = i\vec{k}\cdot\vec{B} = 0 \implies \vec{k} \perp \vec{B}
 $$
 
 ### Cross Product Relations
