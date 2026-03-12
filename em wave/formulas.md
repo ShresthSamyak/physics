@@ -4,125 +4,117 @@ Formulas for **UPH013 Physics – Electromagnetic Waves**
 
 ---
 
-## 1. Maxwell’s Equations (Integral Form)
+## 1. Maxwell's Equations (Integral Form)
 
 ### Gauss's Law for Electric Field
 
-$$
-\iint \vec{E} \cdot d\vec{S} = \frac{q}{\epsilon_0}
-$$
+```
+∯ E⃗ · dS⃗ = q / ε₀
+```
 
 ### Gauss's Law for Magnetic Field
 
-$$
-\iint \vec{B} \cdot d\vec{S} = 0
-$$
+```
+∯ B⃗ · dS⃗ = 0
+```
 
-This implies **magnetic monopoles do not exist**.
+> This implies **magnetic monopoles do not exist**.
 
 ### Ampère–Maxwell Law
 
-$$
-\oint \vec{B} \cdot d\vec{l} = \mu_0 \left( i + \epsilon_0 \frac{d\Phi_E}{dt} \right)
-$$
+```
+∮ B⃗ · dl⃗ = μ₀ ( i + ε₀ · dΦ_E/dt )
+```
 
 ### Faraday's Law of Electromagnetic Induction
 
-$$
-\oint \vec{E} \cdot d\vec{l} = -\frac{d\Phi_B}{dt}
-$$
+```
+∮ E⃗ · dl⃗ = −dΦ_B/dt
+```
 
 ---
 
-## 2. Maxwell’s Equations (Differential Form)
+## 2. Maxwell's Equations (Differential Form)
 
-### Gauss’s Law (Electric)
+### Gauss's Law (Electric)
 
-$$
+```
+∇ · E⃗ = ρ / ε₀
+```
 
-abla \cdot \vec{E} = \frac{\rho}{\epsilon_0}
-$$
+### Gauss's Law (Magnetic)
 
-### Gauss’s Law (Magnetic)
+```
+∇ · B⃗ = 0
+```
 
-$$
+### Faraday's Law
 
-abla \cdot \vec{B} = 0
-$$
-
-### Faraday’s Law
-
-$$
-\nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}
-$$
+```
+∇ × E⃗ = −∂B⃗/∂t
+```
 
 ### Ampère–Maxwell Law
 
-$$
-\nabla \times \vec{B} = \mu_0 \left( \vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t} \right)
-$$
+```
+∇ × B⃗ = μ₀ ( J⃗ + ε₀ · ∂E⃗/∂t )
+```
 
 ---
 
 ## 3. Electromagnetic Waves in Vacuum
 
-In vacuum: $\rho = 0$, $\vec{J} = 0$.
+In vacuum: `ρ = 0`, `J⃗ = 0`
 
 ### Simplified Maxwell Equations
 
-$$
-\nabla \cdot \vec{E} = 0
-$$
+```
+∇ · E⃗ = 0
 
-$$
-\nabla \cdot \vec{B} = 0
-$$
+∇ · B⃗ = 0
 
-$$
-\nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}
-$$
+∇ × E⃗ = −∂B⃗/∂t
 
-$$
-\nabla \times \vec{B} = \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t}
-$$
+∇ × B⃗ = μ₀ε₀ · ∂E⃗/∂t
+```
 
 ---
 
 ## 4. Wave Equations
 
-Electric field wave equation:
+**Electric field wave equation:**
 
-$$
-\nabla^2 \vec{E} = \mu_0 \epsilon_0 \frac{\partial^2 \vec{E}}{\partial t^2}
-$$
+```
+∇²E⃗ = μ₀ε₀ · ∂²E⃗/∂t²
+```
 
-Magnetic field wave equation:
+**Magnetic field wave equation:**
 
-$$
-\nabla^2 \vec{B} = \mu_0 \epsilon_0 \frac{\partial^2 \vec{B}}{\partial t^2}
-$$
+```
+∇²B⃗ = μ₀ε₀ · ∂²B⃗/∂t²
+```
 
-### Standard Wave Equation
+**Standard wave equation:**
 
-$$
-\nabla^2 y = \frac{1}{v^2} \frac{\partial^2 y}{\partial t^2}
-$$
+```
+∇²y = (1/v²) · ∂²y/∂t²
+```
 
 ---
 
 ## 5. Plane Wave Solutions
 
-Electric field:
+**Electric field:**
 
-$$
-\vec{E}(\vec{r},t) = \vec{E}_0 e^{i(\vec{k}\cdot\vec{r} - \omega t)}
-$$
+```
+E⃗(r⃗, t) = E⃗₀ · e^[i(k⃗·r⃗ − ωt)]
+```
 
-Magnetic field:
+**Magnetic field:**
 
-$$
-\vec{B}(\vec{r},t) = \vec{B}_0 e^{i(\vec{k}\cdot\vec{r} - \omega t)}
-$$
+```
+B⃗(r⃗, t) = B⃗₀ · e^[i(k⃗·r⃗ − ωt)]
+```
 
 ---
 
@@ -130,25 +122,19 @@ $$
 
 Magnitude of propagation vector:
 
-$$
-k = \frac{2\pi}{\lambda}
-$$
+```
+k = 2π / λ
+```
 
 ---
 
 ## 7. Speed of Electromagnetic Waves
 
-$$
-v = \frac{1}{\sqrt{\mu_0 \epsilon_0}}
-$$
+```
+v = 1 / √(μ₀ε₀)  =  3 × 10⁸ m/s
+```
 
-Substituting constants:
-
-$$
-v = 3 \times 10^8 \; m/s
-$$
-
-This equals the **speed of light**.
+> This equals the **speed of light**.
 
 ---
 
@@ -156,237 +142,202 @@ This equals the **speed of light**.
 
 From divergence equations:
 
-$$
+```
+∇ · E⃗ = ik⃗ · E⃗ = 0  →  k⃗ ⊥ E⃗
 
-abla \cdot \vec{E} = i\vec{k}\cdot\vec{E} = 0 \implies \vec{k} \perp \vec{E}
-$$
-
-Similarly:
-
-$$
-
-abla \cdot \vec{B} = i\vec{k}\cdot\vec{B} = 0 \implies \vec{k} \perp \vec{B}
-$$
+∇ · B⃗ = ik⃗ · B⃗ = 0  →  k⃗ ⊥ B⃗
+```
 
 ### Cross Product Relations
 
-$$
-\vec{k} \times \vec{E} = \omega \vec{B} \implies \vec{B} \perp \vec{E}, \vec{k}
-$$
+```
+k⃗ × E⃗ = ωB⃗   →   B⃗ ⊥ E⃗ and k⃗
 
-$$
-\vec{k} \times \vec{B} = -\omega \vec{E} \implies \vec{E} \perp \vec{B}, \vec{k}
-$$
+k⃗ × B⃗ = −ωE⃗  →   E⃗ ⊥ B⃗ and k⃗
+```
 
 ---
 
 ## 9. Intrinsic Impedance of Free Space
 
-Assume:
-- $E$ along $x$
-- $B$ along $y$
-- propagation along $z$
+Assume: E along x, B along y, propagation along z.
 
 From Maxwell equations:
 
-$$
-kE_x = \mu_0 \omega H_y \implies \frac{E_x}{H_y} = \frac{\mu_0 \omega}{k}
-$$
+```
+k·Eₓ = μ₀ω·Hᵧ   →   Eₓ/Hᵧ = μ₀ω/k
+```
 
-Since $\frac{\omega}{k} = c$, we obtain:
+Since `ω/k = c`:
 
-$$
-Z = \sqrt{\frac{\mu_0}{\epsilon_0}}
-$$
-
-Numerically:
-
-$$
-Z = 377 \; \Omega
-$$
+```
+Z = √(μ₀/ε₀)  =  377 Ω
+```
 
 ---
 
 ## 10. EM Waves in Conducting Medium
 
-Material properties:
+**Material properties:**
 
-$$
-\epsilon = \epsilon_r \epsilon_0, \quad \mu = \mu_r \mu_0
-$$
+```
+ε = εᵣε₀     μ = μᵣμ₀
+```
 
-Current density:
+**Current density:**
 
-$$
-\vec{J} = \sigma \vec{E}
-$$
+```
+J⃗ = σE⃗
+```
 
 ### Modified Ampère–Maxwell Law
 
-$$
-\nabla \times \vec{B} = \mu \left( \vec{J} + \epsilon \frac{\partial \vec{E}}{\partial t} \right)
-$$
+```
+∇ × B⃗ = μ ( J⃗ + ε · ∂E⃗/∂t )
+```
 
 ---
 
 ## 11. Wave Equations in Conductors
 
-Electric field:
+**Electric field:**
 
-$$
-\nabla^2 \vec{E} = \mu\sigma \frac{\partial \vec{E}}{\partial t} + \mu\epsilon \frac{\partial^2 \vec{E}}{\partial t^2}
-$$
+```
+∇²E⃗ = μσ · ∂E⃗/∂t  +  με · ∂²E⃗/∂t²
+```
 
-Magnetic field:
+**Magnetic field:**
 
-$$
-\nabla^2 \vec{B} = \mu\sigma \frac{\partial \vec{B}}{\partial t} + \mu\epsilon \frac{\partial^2 \vec{B}}{\partial t^2}
-$$
+```
+∇²B⃗ = μσ · ∂B⃗/∂t  +  με · ∂²B⃗/∂t²
+```
 
 ---
 
 ## 12. Complex Wave Vector
 
-Assume $k = a + ib$.
+Assume `k = a + ib`
 
-Wave relation:
+**Wave relation:**
 
-$$
-k^2 = i\mu\sigma\omega + \mu\epsilon\omega^2
-$$
+```
+k² = iμσω + μεω²
+```
 
-Expanding $k^2 = (a^2 - b^2) + i(2ab)$, thus:
+Expanding `k² = (a² − b²) + i(2ab)`:
 
-$$
-a^2 - b^2 = \mu\epsilon\omega^2
-$$
+```
+a² − b² = μεω²
 
-$$
-2ab = \mu\sigma\omega
-$$
+2ab = μσω
+```
 
 ---
 
 ## 13. Phase Constant
 
-$$
-a = \omega \sqrt{ \frac{\epsilon\mu}{2} \left[ \sqrt{1 + \left(\frac{\sigma}{\epsilon\omega}\right)^2} + 1 \right] }
-$$
+```
+a = ω √{ (εμ/2) · [ √(1 + (σ/εω)²) + 1 ] }
+```
 
 ---
 
 ## 14. Attenuation Constant
 
-$$
-b = \omega \sqrt{ \frac{\epsilon\mu}{2} \left[ \sqrt{1 + \left(\frac{\sigma}{\epsilon\omega}\right)^2} - 1 \right] }
-$$
+```
+b = ω √{ (εμ/2) · [ √(1 + (σ/εω)²) − 1 ] }
+```
 
 ---
 
 ## 15. Good Conductors
 
-Condition: $\sigma \gg \omega\epsilon$.
+> Condition: `σ >> ωε`
 
-Then:
+```
+a = b = √(μσω / 2)
+```
 
-$$
-a = b = \sqrt{\frac{\mu\sigma\omega}{2}}
-$$
+**Phase shift:**
 
-### Phase Shift
+```
+φ = arctan(b/a) = π/4
+```
 
-$$
-\phi = \tan^{-1}\left(\frac{b}{a}\right) = \frac{\pi}{4}
-$$
+**Skin depth:**
 
-### Skin Depth
-
-$$
-\delta = \frac{1}{b} = \sqrt{\frac{2}{\mu\sigma\omega}}
-$$
+```
+δ = 1/b = √(2 / μσω)
+```
 
 ---
 
 ## 16. Poor Conductors
 
-Condition: $\sigma \ll \omega\epsilon$.
+> Condition: `σ << ωε`
 
-Then:
+```
+a = ω√(εμ)
 
-$$
-a = \omega\sqrt{\epsilon\mu}
-$$
+b = (σ/2) · √(μ/ε)
+```
 
-$$
-b = \frac{\sigma}{2} \sqrt{\frac{\mu}{\epsilon}}
-$$
+**Phase shift:**
 
-### Phase Shift
+```
+φ = arctan( σ / 2εω )
+```
 
-$$
-\phi = \tan^{-1} \left( \frac{\sigma}{2\epsilon\omega} \right)
-$$
+**Skin depth:**
 
-### Skin Depth
-
-$$
-\delta = \frac{1}{b} = \frac{2}{\sigma} \sqrt{\frac{\epsilon}{\mu}}
-$$
+```
+δ = 1/b = (2/σ) · √(ε/μ)
+```
 
 ---
 
 ## 17. Attenuation of EM Waves
 
-Inside a conductor amplitudes decay exponentially.
+Inside a conductor, amplitudes decay exponentially:
 
-Electric field:
+```
+E⃗₀*(r) = E⃗₀ · e^(−br)
 
-$$
-\vec{E}_0^*(r) = \vec{E}_0 e^{-br}
-$$
-
-Magnetic field:
-
-$$
-\vec{B}_0^*(r) = \vec{B}_0 e^{-br}
-$$
+B⃗₀*(r) = B⃗₀ · e^(−br)
+```
 
 ---
 
 ## 18. Skin Depth
 
-Skin depth is the distance where amplitude reduces by factor $1/e$.
+Skin depth is the distance at which amplitude reduces by a factor of `1/e`:
 
-$$
-\delta = \frac{1}{b}
-$$
+```
+δ = 1/b
+```
 
-At $r = 1/b$:
+At `r = 1/b`:
 
-$$
-E = \frac{E_0}{e}
-$$
+```
+E = E₀ / e
+```
 
 ---
 
 ## 19. Phase Difference Between E and B
 
-In conducting medium $\vec{E} \not\parallel \vec{B}$.
+In a conducting medium, `E⃗` and `B⃗` are **not in phase**.
 
-Wave vector:
+**Wave vector:**
 
-$$
-k = |k|e^{i\phi}
-$$
+```
+k = |k| · e^(iφ)
 
-Where:
+|k| = √(a² + b²)
+```
 
-$$
-|k| = \sqrt{a^2 + b^2}
-$$
-
-and $\phi$ represents the **phase shift between electric and magnetic fields**.
+Where `φ` is the **phase shift between electric and magnetic fields**.
 
 ---
 
-# End of Electromagnetic Waves Formula Sheet
+*End of Electromagnetic Waves Formula Sheet*
