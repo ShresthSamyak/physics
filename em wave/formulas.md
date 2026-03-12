@@ -9,13 +9,13 @@ Formulas for **UPH013 Physics – Electromagnetic Waves**
 ### Gauss's Law for Electric Field
 
 ```
-∯ E⃗ · dS⃗ = q / ε₀
+∯ E · dS = q / ε₀
 ```
 
 ### Gauss's Law for Magnetic Field
 
 ```
-∯ B⃗ · dS⃗ = 0
+∯ B · dS = 0
 ```
 
 > This implies **magnetic monopoles do not exist**.
@@ -23,13 +23,13 @@ Formulas for **UPH013 Physics – Electromagnetic Waves**
 ### Ampère–Maxwell Law
 
 ```
-∮ B⃗ · dl⃗ = μ₀ ( i + ε₀ · dΦ_E/dt )
+∮ B · dl = μ₀ × ( i + ε₀ × dΦ_E/dt )
 ```
 
 ### Faraday's Law of Electromagnetic Induction
 
 ```
-∮ E⃗ · dl⃗ = −dΦ_B/dt
+∮ E · dl = −dΦ_B/dt
 ```
 
 ---
@@ -39,65 +39,65 @@ Formulas for **UPH013 Physics – Electromagnetic Waves**
 ### Gauss's Law (Electric)
 
 ```
-∇ · E⃗ = ρ / ε₀
+div(E) = ρ / ε₀
 ```
 
 ### Gauss's Law (Magnetic)
 
 ```
-∇ · B⃗ = 0
+div(B) = 0
 ```
 
 ### Faraday's Law
 
 ```
-∇ × E⃗ = −∂B⃗/∂t
+curl(E) = −∂B/∂t
 ```
 
 ### Ampère–Maxwell Law
 
 ```
-∇ × B⃗ = μ₀ ( J⃗ + ε₀ · ∂E⃗/∂t )
+curl(B) = μ₀ × ( J + ε₀ × ∂E/∂t )
 ```
 
 ---
 
 ## 3. Electromagnetic Waves in Vacuum
 
-In vacuum: `ρ = 0`, `J⃗ = 0`
+In vacuum: `ρ = 0`, `J = 0`
 
 ### Simplified Maxwell Equations
 
 ```
-∇ · E⃗ = 0
+div(E) = 0
 
-∇ · B⃗ = 0
+div(B) = 0
 
-∇ × E⃗ = −∂B⃗/∂t
+curl(E) = −∂B/∂t
 
-∇ × B⃗ = μ₀ε₀ · ∂E⃗/∂t
+curl(B) = μ₀ε₀ × ∂E/∂t
 ```
 
 ---
 
 ## 4. Wave Equations
 
-**Electric field wave equation:**
+**Electric field:**
 
 ```
-∇²E⃗ = μ₀ε₀ · ∂²E⃗/∂t²
+∇²E = μ₀ε₀ × ∂²E/∂t²
 ```
 
-**Magnetic field wave equation:**
+**Magnetic field:**
 
 ```
-∇²B⃗ = μ₀ε₀ · ∂²B⃗/∂t²
+∇²B = μ₀ε₀ × ∂²B/∂t²
 ```
 
-**Standard wave equation:**
+**Standard form:**
 
 ```
-∇²y = (1/v²) · ∂²y/∂t²
+∇²y = (1/v²) × ∂²y/∂t²
 ```
 
 ---
@@ -107,20 +107,18 @@ In vacuum: `ρ = 0`, `J⃗ = 0`
 **Electric field:**
 
 ```
-E⃗(r⃗, t) = E⃗₀ · e^[i(k⃗·r⃗ − ωt)]
+E(r, t) = E₀ × exp[i(k·r − ωt)]
 ```
 
 **Magnetic field:**
 
 ```
-B⃗(r⃗, t) = B⃗₀ · e^[i(k⃗·r⃗ − ωt)]
+B(r, t) = B₀ × exp[i(k·r − ωt)]
 ```
 
 ---
 
 ## 6. Wave Vector
-
-Magnitude of propagation vector:
 
 ```
 k = 2π / λ
@@ -131,7 +129,7 @@ k = 2π / λ
 ## 7. Speed of Electromagnetic Waves
 
 ```
-v = 1 / √(μ₀ε₀)  =  3 × 10⁸ m/s
+v = 1 / sqrt(μ₀ε₀) = 3 × 10⁸ m/s
 ```
 
 > This equals the **speed of light**.
@@ -143,35 +141,33 @@ v = 1 / √(μ₀ε₀)  =  3 × 10⁸ m/s
 From divergence equations:
 
 ```
-∇ · E⃗ = ik⃗ · E⃗ = 0  →  k⃗ ⊥ E⃗
+div(E) = 0  -->  k is perpendicular to E
 
-∇ · B⃗ = ik⃗ · B⃗ = 0  →  k⃗ ⊥ B⃗
+div(B) = 0  -->  k is perpendicular to B
 ```
 
 ### Cross Product Relations
 
 ```
-k⃗ × E⃗ = ωB⃗   →   B⃗ ⊥ E⃗ and k⃗
+k x E = ωB   -->  B is perpendicular to both E and k
 
-k⃗ × B⃗ = −ωE⃗  →   E⃗ ⊥ B⃗ and k⃗
+k x B = −ωE  -->  E is perpendicular to both B and k
 ```
 
 ---
 
 ## 9. Intrinsic Impedance of Free Space
 
-Assume: E along x, B along y, propagation along z.
-
-From Maxwell equations:
+Assume: E along x-axis, B along y-axis, propagation along z-axis.
 
 ```
-k·Eₓ = μ₀ω·Hᵧ   →   Eₓ/Hᵧ = μ₀ω/k
+k × Ex = μ₀ω × Hy   -->   Ex/Hy = μ₀ω/k
 ```
 
 Since `ω/k = c`:
 
 ```
-Z = √(μ₀/ε₀)  =  377 Ω
+Z = sqrt(μ₀/ε₀) = 377 Ω
 ```
 
 ---
@@ -181,19 +177,20 @@ Z = √(μ₀/ε₀)  =  377 Ω
 **Material properties:**
 
 ```
-ε = εᵣε₀     μ = μᵣμ₀
+ε = εᵣ × ε₀
+μ = μᵣ × μ₀
 ```
 
 **Current density:**
 
 ```
-J⃗ = σE⃗
+J = σE
 ```
 
 ### Modified Ampère–Maxwell Law
 
 ```
-∇ × B⃗ = μ ( J⃗ + ε · ∂E⃗/∂t )
+curl(B) = μ × ( J + ε × ∂E/∂t )
 ```
 
 ---
@@ -203,13 +200,13 @@ J⃗ = σE⃗
 **Electric field:**
 
 ```
-∇²E⃗ = μσ · ∂E⃗/∂t  +  με · ∂²E⃗/∂t²
+∇²E = μσ × ∂E/∂t  +  με × ∂²E/∂t²
 ```
 
 **Magnetic field:**
 
 ```
-∇²B⃗ = μσ · ∂B⃗/∂t  +  με · ∂²B⃗/∂t²
+∇²B = μσ × ∂B/∂t  +  με × ∂²B/∂t²
 ```
 
 ---
@@ -228,8 +225,7 @@ Expanding `k² = (a² − b²) + i(2ab)`:
 
 ```
 a² − b² = μεω²
-
-2ab = μσω
+2ab     = μσω
 ```
 
 ---
@@ -237,7 +233,7 @@ a² − b² = μεω²
 ## 13. Phase Constant
 
 ```
-a = ω √{ (εμ/2) · [ √(1 + (σ/εω)²) + 1 ] }
+a = ω × sqrt( (εμ/2) × [ sqrt(1 + (σ/εω)²) + 1 ] )
 ```
 
 ---
@@ -245,7 +241,7 @@ a = ω √{ (εμ/2) · [ √(1 + (σ/εω)²) + 1 ] }
 ## 14. Attenuation Constant
 
 ```
-b = ω √{ (εμ/2) · [ √(1 + (σ/εω)²) − 1 ] }
+b = ω × sqrt( (εμ/2) × [ sqrt(1 + (σ/εω)²) − 1 ] )
 ```
 
 ---
@@ -255,7 +251,7 @@ b = ω √{ (εμ/2) · [ √(1 + (σ/εω)²) − 1 ] }
 > Condition: `σ >> ωε`
 
 ```
-a = b = √(μσω / 2)
+a = b = sqrt(μσω / 2)
 ```
 
 **Phase shift:**
@@ -267,7 +263,7 @@ a = b = √(μσω / 2)
 **Skin depth:**
 
 ```
-δ = 1/b = √(2 / μσω)
+δ = 1/b = sqrt(2 / μσω)
 ```
 
 ---
@@ -277,21 +273,21 @@ a = b = √(μσω / 2)
 > Condition: `σ << ωε`
 
 ```
-a = ω√(εμ)
+a = ω × sqrt(εμ)
 
-b = (σ/2) · √(μ/ε)
+b = (σ/2) × sqrt(μ/ε)
 ```
 
 **Phase shift:**
 
 ```
-φ = arctan( σ / 2εω )
+φ = arctan( σ / (2εω) )
 ```
 
 **Skin depth:**
 
 ```
-δ = 1/b = (2/σ) · √(ε/μ)
+δ = 1/b = (2/σ) × sqrt(ε/μ)
 ```
 
 ---
@@ -301,16 +297,16 @@ b = (σ/2) · √(μ/ε)
 Inside a conductor, amplitudes decay exponentially:
 
 ```
-E⃗₀*(r) = E⃗₀ · e^(−br)
+E(r) = E₀ × exp(−br)
 
-B⃗₀*(r) = B⃗₀ · e^(−br)
+B(r) = B₀ × exp(−br)
 ```
 
 ---
 
 ## 18. Skin Depth
 
-Skin depth is the distance at which amplitude reduces by a factor of `1/e`:
+Skin depth is the distance at which amplitude reduces by `1/e`:
 
 ```
 δ = 1/b
@@ -326,14 +322,12 @@ E = E₀ / e
 
 ## 19. Phase Difference Between E and B
 
-In a conducting medium, `E⃗` and `B⃗` are **not in phase**.
-
-**Wave vector:**
+In a conducting medium, E and B are **not in phase**.
 
 ```
-k = |k| · e^(iφ)
+k = |k| × exp(iφ)
 
-|k| = √(a² + b²)
+|k| = sqrt(a² + b²)
 ```
 
 Where `φ` is the **phase shift between electric and magnetic fields**.
